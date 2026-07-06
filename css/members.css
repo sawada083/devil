@@ -1,53 +1,139 @@
 .members {
-    background-color: #f8f8f8;
+    background: linear-gradient(to bottom, #f8f8f8, #e9e9e9);
     padding-top: 45px;
     padding-bottom: 55px;
 }
 
 .members h2 {
-    font-size: 22pt;
+    font-size: 36px;
     font-weight: bold;
     text-align: center;
+    color: #c40000;
+    letter-spacing: 3px;
+
 }
 
 .members h2::after {
     content: '';
     display: block;
-    width: 36px;
-    height: 3px;
-    background-color: #000000;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 60px;
+    height: 4px;
+    background-color: #c40000;
+    margin: 15px auto 0;
+    border-radius: 10px;
+
 }
 
 .member-list {
     display: flex;
     padding-top: 40px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     padding-left: 60px;
     padding-right: 60px;
-    overflow: scroll;
+    overflow-x: auto;
+    gap: 30px;
+
 }
 
 .member-list li {
     flex-shrink: 0;
-    width: 260px;
-    margin-left: 75px;
+    width: 280px;
+    list-style: none;
+    
+    background-color: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+    transition: 0.3s;
+
 }
 
-.member-list li:first-child {
-    margin-left: 0;
+.member-list li:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
+
+
+.member-list img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+
+.member-list dl {
+    padding: 15px;
+}
+
+.member-list dt {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #c40000;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #c40000;
+}
+
+.member-list dd {
+    margin: 0;
+    line-height: 1.8;
+    font-size: 14px;
+    color: #333333;
+}
+
+
+.speciality {
+    margin: 0;
+    background-color: #c40000;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    padding: 12px;
+    font-size: 15px;
+}
+
+
+.member-list::-webkit-scrollbar {
+    height: 10px;
+}
+
+.member-list::-webkit-scrollbar-track {
+    background: #dddddd;
+    border-radius: 10px;
+}
+
+.member-list::-webkit-scrollbar-thumb {
+    background: #c40000;
+    border-radius: 10px;
+}
+
+
+
 
 @media (max-width: 800px) {
+    .members h2 {
+        font-size: 28px;
+    }
+
     .member-list {
         padding-left: 20px;
         padding-right: 20px;
     }
 
     .member-list li {
-        width: 220px;
-        margin-left: 30px;
+        width: 240px;
     }
+
+    .member-list img {
+        height: 220px;
+    }
+
+    .member-list dt {
+        font-size: 20px;
+    }
+
 }
