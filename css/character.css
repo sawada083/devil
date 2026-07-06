@@ -1,15 +1,12 @@
 .title {
     height: 310px;
-    background:liner-gradient(to right,#2d004d, #6a0dad, #2d004d);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background: linear-gradient(to right, #2d004d, #6a0dad, #2d004d);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    text-shadow: 1px 1px 10px #4b2c14;
+    text-shadow: 1px 1px 10px #000;
 }
 
 .title h1 {
