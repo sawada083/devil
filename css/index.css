@@ -179,6 +179,15 @@ img {
         border-radius: 0;
         outline: none;
     }
+     .first-view-text h1 {
+        font-size: 50px;      /* PCは100px → スマホは50px */
+        line-height: 1.1;
+    }
+
+    .first-view-text p {
+        font-size: 18px;      /* PCは25px → スマホは18px */
+        margin-top: 15px;
+    }
 }
 .footer {
     color: #ffffff;
