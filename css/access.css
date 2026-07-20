@@ -1,9 +1,22 @@
 .title {
-    width: 930px;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    height: 310px;
+    background-color: #4a154b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 10px #000;
+}
 
+.title h1 {
+    font-family: "Cherry Bomb One", cursive;
+    font-size: 32pt;
+}
+
+.title p {
+    font-size: 14px;
+    margin-top: 15px;
 }
 
 .map {
