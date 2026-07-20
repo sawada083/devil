@@ -10,8 +10,9 @@
 }
 
 .title h1 {
-    font-family: "Cherry Bomb One", cursive;
-    font-size: 32pt;
+    font-family: "Black Ops One", system-ui;
+    font-wight: 400;
+    font-style: normal;
 }
 
 .title p {
