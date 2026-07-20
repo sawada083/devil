@@ -1,6 +1,6 @@
 .title {
     height: 310px;
-    background: linear-gradient(to right, #2d004d, #6a0dad, #2d004d);
+    background-color: #4a154b;
     display: flex;
     flex-direction: column;
     justify-content: center;
