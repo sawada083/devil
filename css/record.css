@@ -142,8 +142,11 @@
 }
 
 .content{
-    white-space: nowrap;
-    overflow-x: auto;
+    /* white-space: nowrap;  ← これらを削除、または以下に変更 */
+    white-space: normal; 
+    overflow-x: visible; /* 横スクロールを解除 */
+    width: 100%;        /* 必要に応じて横幅をいっぱいに広げる */
+    box-sizing: border-box;
 }
 
 }
