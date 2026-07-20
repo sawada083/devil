@@ -9,9 +9,12 @@ nav.floating {
 
 .first-view {
     height: calc(100vh - 110px);
-    background-color: #4a154b;
-    background-repeat: no-repeat;
+    background:
+        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("../images/index/S__89284615.jpg");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
     display: flex;
     align-items: center;
     justify-content: center;
