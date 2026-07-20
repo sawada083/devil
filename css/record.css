@@ -122,10 +122,9 @@
 }
 
 .event{
-    flex-direction:column;
-    align-items:flex-start;
-    gap:12px;
-    margin-bottom:25px;
+    display: block; /* flex から block に変更して縦に素直に並べる */
+    position: relative;
+    margin-bottom: 40px; /* イベントごとの間隔 */
 }
 
 .event::before{
@@ -133,20 +132,22 @@
     width:14px;
     height:14px;
     border:3px solid #6b2fb3;
+    top: 18px; /* 丸ポッチの位置を年の高さに合わせる */
 }
 
 .year{
-    width:50px;
-    height:50px;
-    font-size:16px;
+    width:60px;  /* 少し小さく調整 */
+    height:30px; /* 高さを低くして、文字が収まる楕円〜角丸にする */
+    border-radius: 15px; /* 丸みを調整 */
+    font-size:14px;
+    margin-bottom: 12px; /* 年と文字コンテンツの間の隙間 */
 }
 
 .content{
-    /* white-space: nowrap;  ← これらを削除、または以下に変更 */
-    white-space: normal; 
-    overflow-x: visible; /* 横スクロールを解除 */
-    width: 100%;        /* 必要に応じて横幅をいっぱいに広げる */
+    width: 100%;
     box-sizing: border-box;
+    white-space: normal; /* 折り返しを正常に */
+    overflow: visible;
 }
 
 }
