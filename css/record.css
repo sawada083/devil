@@ -1,96 +1,81 @@
-.history{
-    background: linear-gradient(to bottom,#fbf8ff,#efe7ff);
-    padding:50px 0 80px;
-}
-
-.title {
-    height: 310px;
-    background-color: #4a154b;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    text-shadow: 1px 1px 10px #000;
-}
-
-.title h1 {
-    font-family: "Black Ops One", system-ui;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.title p {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 15px;
-}
-
-
 .timeline{
-    position:relative;
-    max-width:900px;
-    margin:50px auto;
-    padding-left:60px;
+    position: relative;
+    max-width: 900px;
+    margin: 60px auto;
+    padding-left: 60px;
 }
 
 .timeline::before{
-    content:"";
-    position:absolute;
-    left:25px;
-    top:0;
-    bottom:0;
-    width:4px;
-    background:#b98cff;
-    border-radius:10px;
+    content: "";
+    position: absolute;
+    left: 25px;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background: linear-gradient(#6b2fb3,#b98cff,#6b2fb3);
+    border-radius: 10px;
 }
 
 .event{
-    position:relative;
-    display:flex;
-    align-items:center;
-    margin-bottom:28px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 35px;
 }
 
 .event::before{
-    content:"";
-    position:absolute;
-    left:-46px;
-    width:18px;
-    height:18px;
-    background:#6b2fb3;
-    border:4px solid #fff;
-    border-radius:50%;
-    box-shadow:0 0 0 4px #d9c0ff;
+    content: "";
+    position: absolute;
+    left: -46px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 5px solid #6b2fb3;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(107,47,179,.35);
 }
 
 .year{
-    width:90px;
-    font-size:24px;
-    font-weight:bold;
-    color:#6b2fb3;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg,#6b2fb3,#a65cff);
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+    font-weight: bold;
+    flex-shrink: 0;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,.2);
 }
 
 .content{
-    flex:1;
-    background:#fff;
-    border-radius:20px;
-    padding:22px 28px;
-    border-left:8px solid #6b2fb3;
+    flex: 0 1 650px;
+    max-width: 650px;
 
-    box-shadow:
-        0 8px 25px rgba(0,0,0,.08);
+    background: #fff;
+    border-radius: 20px;
+    padding: 22px 28px;
 
-    transition:.3s;
+    border-left: 8px solid #6b2fb3;
+    border: 1px solid #ece5ff;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+    transition: .3s;
 }
 
 .content:hover{
-    transform:translateX(10px) scale(1.02);
-    box-shadow:
-        0 15px 35px rgba(107,47,179,.25);
+    transform: translateX(10px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(107,47,179,.25);
 }
 
-@media(max-width:800px){
+@media (max-width:800px){
 
 .timeline{
     padding-left:40px;
@@ -103,6 +88,7 @@
 .event{
     flex-direction:column;
     align-items:flex-start;
+    gap:15px;
 }
 
 .event::before{
@@ -110,11 +96,13 @@
 }
 
 .year{
-    margin-bottom:10px;
-    font-size:20px;
+    width:60px;
+    height:60px;
+    font-size:18px;
 }
 
 .content{
     width:100%;
+    max-width:100%;
 }
 }
