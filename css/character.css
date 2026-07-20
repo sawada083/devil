@@ -86,9 +86,17 @@
     background: #d4af37;
 }
 
+.feature-image img{
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
 .footer {
     margin-top: 80px;
 }
+
 
 /* スマホ */
 @media (max-width:800px){
@@ -108,6 +116,12 @@
 .feature{
     display:block;
     padding:25px;
+}
+
+.feature-image img{
+    width:220px;
+    display:block;
+    margin:0 auto 20px;
 }
 
 .year{
