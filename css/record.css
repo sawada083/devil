@@ -144,9 +144,10 @@
 .content{
     width:100%;
     max-width:100%;
-    padding:15px 18px;
+    padding:12px 16px;
     font-size:14px;
-    border-left:6px solid #6b2fb3;
+    line-height:1.4;
+    border-left:5px solid #6b2fb3;
 }
 
 }
