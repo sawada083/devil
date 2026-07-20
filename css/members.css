@@ -65,9 +65,7 @@
     object-fit: contain;
     
     background:
-        radial-gradient(circle at center,
-        #ffffff 0%,
-        #f6f1ff 100%);
+        #ffffff;
 
     display: block;
     padding: 20px;
@@ -100,7 +98,7 @@
 .speciality {
     margin: 0 20px 20px;
 
-    background:#000000;
+    background:#d4af37;
 
     color: white;
     text-align: center;
@@ -125,7 +123,7 @@
 }
 
 .member-list::-webkit-scrollbar-thumb {
-    background: #6b2fb3;
+    background: #d4af37;
     border-radius: 10px;
 }
 
