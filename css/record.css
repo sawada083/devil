@@ -1,3 +1,25 @@
+.title {
+    height: 310px;
+    background-color: #4a154b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 10px #000;
+}
+
+.title h1 {
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.title p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+}
 .timeline{
     position: relative;
     max-width: 900px;
