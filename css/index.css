@@ -104,9 +104,6 @@ img {
     margin-right: 20px;
 }
 
-.site-menu ul li a {
-    font-family: 'Cherry Bomb One', cursive;
-}
 
 @media (max-width: 800px) {
     .site-menu ul {
