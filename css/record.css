@@ -73,22 +73,21 @@
 
 .content{
     flex:1;
-    background:white;
-    padding:18px 24px;
-    border-radius:18px;
+    background:#fff;
+    border-radius:20px;
+    padding:22px 28px;
+    border-left:8px solid #6b2fb3;
 
     box-shadow:
-        0 6px 15px rgba(107,47,179,.15),
-        0 3px 8px rgba(0,0,0,.08);
+        0 8px 25px rgba(0,0,0,.08);
 
     transition:.3s;
 }
 
 .content:hover{
-    transform:translateX(8px);
+    transform:translateX(10px) scale(1.02);
     box-shadow:
-        0 12px 28px rgba(107,47,179,.25),
-        0 6px 15px rgba(0,0,0,.12);
+        0 15px 35px rgba(107,47,179,.25);
 }
 
 @media(max-width:800px){
