@@ -100,32 +100,53 @@
 
 @media (max-width:800px){
 
+.title{
+    height:200px;
+}
+
+.title h1{
+    font-size:32px;
+}
+
+.title p{
+    font-size:16px;
+}
+
 .timeline{
-    padding-left:40px;
+    padding-left:35px;
+    margin:40px auto;
 }
 
 .timeline::before{
-    left:15px;
+    left:12px;
 }
 
 .event{
     flex-direction:column;
     align-items:flex-start;
-    gap:15px;
+    gap:12px;
+    margin-bottom:25px;
 }
 
 .event::before{
-    left:-34px;
+    left:-28px;
+    width:14px;
+    height:14px;
+    border:3px solid #6b2fb3;
 }
 
 .year{
-    width:60px;
-    height:60px;
-    font-size:18px;
+    width:50px;
+    height:50px;
+    font-size:16px;
 }
 
 .content{
     width:100%;
     max-width:100%;
+    padding:15px 18px;
+    font-size:14px;
+    border-left:6px solid #6b2fb3;
 }
+
 }
