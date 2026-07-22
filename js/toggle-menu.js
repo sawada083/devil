@@ -14,7 +14,7 @@ window.addEventListener('load', function () {
 $(function () {
     $(window).scroll (function () {
         $("nav.floating").stop().animate(
-            {"top": $(window).scrollTop() + 20},
+            {"top": $(window).scrollTop() + 100},
         500);
     });
 });
