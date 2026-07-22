@@ -142,3 +142,45 @@
 }
 
 }
+/* ===== トップボタン（PC）===== */
+nav.floating {
+    position: absolute;
+    top: 150px;
+    left: 30px;
+    z-index: 100;
+}
+
+nav.floating ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.floating a {
+    display: block;
+    padding: 12px 18px;
+    background-color: #4a154b;
+    color: #ffffff;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav.floating a:hover {
+    background-color: #6a1b6b;
+}
+
+/* ===== スマホ ===== */
+@media (max-width: 800px) {
+    nav.floating {
+        top: 150px;
+        left: 10px;
+    }
+
+    nav.floating a {
+        padding: 8px 12px;
+        font-size: 12px;
+        border-radius: 20px;
+    }
+}
