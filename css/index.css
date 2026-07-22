@@ -209,8 +209,8 @@ img {
 /* トップボタン */
 nav.floating {
     position: fixed;
-    right: 20px;
-    bottom: 20px;
+    top:100px;
+    left: 50px;
     z-index: 1000;
 }
 
