@@ -1,12 +1,5 @@
 @charset "utf-8";
 
-nav.floating {
-    position: absolute;
-    top: 100px;
-    left: 50px;
-    background-color: #d0d0d0;
-}
-
 .first-view {
     height: calc(100vh - 110px);
     background:
@@ -212,4 +205,31 @@ img {
     font-size: 14pt;
     font-weight: bold;
     margin-top: 90px;
+}
+/* トップボタン */
+nav.floating {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+}
+
+nav.floating ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.floating a {
+    display: block;
+    padding: 12px 18px;
+    background-color: #4a154b;
+    color: #ffffff;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav.floating a:hover {
+    background-color: #6a1b6b;
 }
