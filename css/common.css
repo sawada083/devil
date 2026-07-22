@@ -59,35 +59,6 @@ img {
     margin-right: 20px;
 }
 
-.site-menu a {
-    font-family: 'Black Ops One', sans-serif;
-    color: #000000;
-    font-size: 30px;
-    letter-spacing: 2px;
-    transition: 0.3s;
-    position: relative;
-}
-
-.site-menu a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 0;
-    height: 3px;
-    background: #7b2cbf;
-    transition: width 0.3s;
-}
-
-.site-menu a:hover {
-    color: #000000;
-}
-
-.site-menu a:hover::after {
-    width: 100%;
-}
-
-
 .footer {
     color: #ffffff;
     background-color: #24211b;
@@ -108,6 +79,25 @@ img {
     font-size: 14px;
     font-weight: bold;
     margin-top: 90px;
+}
+
+.site-menu a {
+    position: relative;
+}
+
+.site-menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    transition: width 0.3s ease;
+}
+
+.site-menu a:hover::after {
+    width: 100%;
 }
 
 @media (max-width: 800px){
