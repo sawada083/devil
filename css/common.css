@@ -59,6 +59,38 @@ img {
     margin-right: 20px;
 }
 
+.site-menu a {
+    font-family: 'Black Ops One', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #2b003f;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.site-menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 3px;
+    background: #7b2cbf;
+    transition: width 0.3s;
+}
+
+.site-menu a:hover {
+    color: #7b2cbf;
+    text-shadow:
+        0 0 5px #c77dff,
+        0 0 10px #c77dff;
+}
+
+.site-menu a:hover::after {
+    width: 100%;
+}
+
 
 .footer {
     color: #ffffff;
