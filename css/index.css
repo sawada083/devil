@@ -206,10 +206,10 @@ img {
     font-weight: bold;
     margin-top: 90px;
 }
-/* トップボタン */
+/* ===== トップボタン（PC） ===== */
 nav.floating {
     position: fixed;
-    top:125px;
+    top: 125px;
     left: 50px;
     z-index: 1000;
 }
@@ -228,8 +228,23 @@ nav.floating a {
     border-radius: 30px;
     font-weight: bold;
     text-decoration: none;
+    font-size: 16px;
 }
 
 nav.floating a:hover {
     background-color: #6a1b6b;
+}
+
+/* ===== スマホ用 ===== */
+@media (max-width: 800px) {
+    nav.floating {
+        top: 60px;
+        left: 10px;
+    }
+
+    nav.floating a {
+        padding: 8px 12px;
+        font-size: 12px;
+        border-radius: 20px;
+    }
 }
