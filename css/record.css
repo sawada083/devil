@@ -21,6 +21,7 @@
     margin-top: 15px;
     color: #d4af37;
 }
+
 .timeline{
     position: relative;
     max-width: 900px;
@@ -105,12 +106,9 @@
 }
 
 .title h1{
-    font-size:32px;
+    font-size:26px;
 }
 
-.title p{
-    font-size:16px;
-}
 
 .timeline{
     padding-left:35px;
@@ -150,4 +148,45 @@
     overflow: visible;
 }
 
+}
+nav.floating {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    z-index: 1000;
+}
+
+nav.floating ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.floating a {
+    display: block;
+    padding: 12px 18px;
+    background-color: #4a154b;
+    color: #ffffff;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav.floating a:hover {
+    background-color: #6a1b6b;
+}
+
+/* ===== スマホ用 ===== */
+@media (max-width: 800px) {
+    nav.floating {
+        top: 60px;
+        left: 10px;
+    }
+
+    nav.floating a {
+        padding: 8px 12px;
+        font-size: 12px;
+        border-radius: 20px;
+    }
 }
