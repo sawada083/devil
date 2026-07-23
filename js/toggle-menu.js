@@ -10,3 +10,10 @@ window.addEventListener('load', function () {
         }
     });
 });
+$(function () {
+    $(window).scroll (function () {
+        $("nav.floating").stop().animate(
+            {"top":150},
+        500);
+    });
+});
