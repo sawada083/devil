@@ -140,12 +140,6 @@
 }
 
 }
-nav.floating {
-    position: absolute;
-    top: 150px;
-    left: 50px;
-    z-index: 1000;
-}
 
 nav.floating ul {
     list-style: none;
