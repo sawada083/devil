@@ -81,13 +81,6 @@ img {
     margin-top: 90px;
 }
 
-.floating {
-    position: fixed;
-    top: 150px;
-    left: 50px;
-    z-index: 1000;
-}
-
 .site-menu a {
     position: relative;
     font-family: "Mochiy Pop P One", sans-serif;
