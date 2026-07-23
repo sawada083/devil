@@ -208,7 +208,7 @@ img {
 }
 /* ===== トップボタン（PC） ===== */
 nav.floating {
-    position: absolute;
+    position: fixed;
     top: 150px;
     left: 50px;
     z-index: 1000;
