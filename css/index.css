@@ -207,13 +207,6 @@ img {
     margin-top: 90px;
 }
 /* ===== トップボタン（PC） ===== */
-nav.floating {
-    position: fixed;
-    top: 150px;
-    left: 50px;
-    z-index: 1000;
-}
-
 nav.floating ul {
     list-style: none;
     margin: 0;
