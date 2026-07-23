@@ -83,18 +83,9 @@ img {
 
 .floating {
     position: fixed;
-    right: 30px;
-    bottom: 30px;
+    top: 150px;
+    left: 50px;
     z-index: 1000;
-}
-
-.floating a {
-    display: block;
-    padding: 12px 24px;
-    background-color: #5b1a82;
-    color: white;
-    border-radius: 30px;
-    font-weight: bold;
 }
 
 .site-menu a {
