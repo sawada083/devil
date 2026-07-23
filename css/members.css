@@ -130,6 +130,14 @@
 
 @media (max-width: 800px) {
     
+.title{
+    height:200px;
+}
+
+.title h1{
+    font-size:26pt;
+}
+
     .member-list {
         padding: 20px;
     }
