@@ -174,8 +174,10 @@ nav.floating a:hover {
 /* ===== スマホ用 ===== */
 @media (max-width: 800px) {
     nav.floating {
-        top: 60px;
+        position: absolute;
+        top: 210px;   /* ヘッダー(200px)のすぐ下 */
         left: 10px;
+        z-index: 1000;
     }
 
     nav.floating a {
